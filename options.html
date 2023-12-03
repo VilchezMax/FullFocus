@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full Focus</title>
+    <style>
+      button {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Full Focus</h1>
+    <form>
+      <label for="url">URL a bloquear:</label>
+      <input type="text" id="url" name="url">
+      <br><br>
+      <input type="button" value="Block" id="block-btn">
+      <input type="button" value="Unblock" id="unblock-btn">
+    </form>
+    </br>
+    <button id="showblocked-btn" value="showBlocked">Paginas bloqueadas</button>
+
+    <script src="background.js"></script>
+  </body>
+</html>

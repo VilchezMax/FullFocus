@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Full Focus",
+    "description": "Blocks specified websites while you're studying",
+    "version": "3.0",
+  
+    "permissions": [
+      "tabs",
+      "webRequest",
+      "webRequestBlocking",
+      "activeTab",
+      "<all_urls>"
+    ],
+  
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+
+    "browser_action": {
+      "default_popup": "options.html",
+      "default_icon": {
+        "16": "images/scalo16.ico",
+        "32": "images/scalo32.ico",
+        "48": "images/scalo48.ico",
+        "128": "images/scalo128.ico"
+      }
+    },
+
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    }
+  }
+  
